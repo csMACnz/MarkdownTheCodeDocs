@@ -1,0 +1,5 @@
+version: 0.{build}
+before_build:
+- ps: nuget.exe restore src/csmacnz.MarkdownTheCodeDocs.sln
+build:
+  verbosity: minimal
