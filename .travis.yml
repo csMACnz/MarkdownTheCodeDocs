@@ -1,0 +1,7 @@
+language: csharp
+solution: ./src/csmacnz.MarkdownTheCodeDocs.sln
+install:
+  - export MONO_INTEGRATION_MODE=True
+  - nuget restore ./src/csmacnz.MarkdownTheCodeDocs.sln
+script:
+  - xbuild /p:Configuration=Release ./src/csmacnz.MarkdownTheCodeDocs.sln
